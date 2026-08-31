@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>After Dark</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saiba tudo sobre seu artista/banda favorito(a) e divirta-se conhecendo um pouco mais sobre a cultura do post-punk">
+    <style>
+        body{
+            background: rgb(92, 4, 4);
+            color:rgb(0, 0, 0);
+            font:18pt OCR A Std, monospace;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    </style>
+    <style>
+        div#area {
+            font: normal 20pt arial;
+            background: black;
+            color: white;
+            width: 400px;
+            height: 400px;
+            line-height: 400px;
+            text-align: center;
+            margin-top: 60px;
+            margin-left: 20px;
+        }
+        div#area1 {
+            font: normal 20pt arial;
+            background: black;
+            color: white;
+            width: 400px;
+            height: 400px;
+            line-height: 400px;
+            text-align: center;
+            margin-top: 60px;
+            margin-left: 450px;
+            margin-top: -400px;
+        }
+        div#area2 {
+            font: normal 20pt arial;
+            background: black;
+            color: white;
+            width: 400px;
+            height: 400px;
+            line-height: 400px;
+            text-align: center;
+            margin-top: 60px;
+            margin-left: 900px;
+            margin-top: -400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to After Dark!</h1>
+        <p>Saiba tudo sobre uma das melhores eras da música!</p>
+    </header>
+    <main>
+    
+        <section>
+            <h2>Quer saber sobre alguma música ou album específico?</h2>
+            <p>Clique no botão abaixo para pesquisar.</p>
+            <button id="archive" onclick="clicar()"> Enter Archive </button>
+            <h2> Explore as bandas mais famosas!</h2>
+            <div id="area">
+                THE CURE 
+            </div>
+            <div id="area1">
+                THE SMITHS
+            </div>
+            <div id="area2">
+                ECHO & THE BUNNYMAN
+            </div>
+        </section>
+        <section>
+                
+            <script>
+                var archive= window.document.getElementById('archive')
+                archive.addEventListener('click', clicar)
+                archive.addEventListener('mouseout', sair)
+                function clicar () {
+                    archive.style.background= 'green'
+                }
+                function sair() {
+                    archive.style.background= 'red'
+                }
+            </script>
+            <script> 
+
+                var area= window.document.getElementById('area')
+                area.addEventListener('click', clicar)
+                area.addEventListener('mouseout', sair)
+                function clicar () {
+                    area.style.background= 'brown'
+                }
+                function sair () {
+                    area.style.background= 'black'
+                }
+            </script>
+            <script>    
+                var area1= window.document.getElementById('area1')
+                area1.addEventListener('click', clicar)
+                area1.addEventListener('mouseout', sair)
+                function clicar () {
+                    area1.style.background= 'brown'
+                }
+                function sair () {
+                    area1.style.background= 'black'
+                }
+            </script>
+            <script>    
+                var area2= window.document.getElementById('area2')
+                area2.addEventListener('click', clicar)
+                area2.addEventListener('mouseout', sair)
+                function clicar () {
+                    area2.style.background= 'brown'
+                }
+                function sair () {
+                    area2.style.background= 'black'
+                }
+            </script>
+        </section>
+    <style>
+        button#archive {
+            background: rgb(172, 60, 60);
+            color: black;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+        }
+    </style>    
+    </main>
+    
+</body>
+</html>
